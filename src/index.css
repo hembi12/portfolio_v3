@@ -1,13 +1,41 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Opcional: Configuración para un desplazamiento suave en toda la página */
+html {
+    scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Ajustes globales opcionales para tipografía y espaciado */
+body {
+    @apply bg-gray-100 text-gray-800 antialiased;
+    font-family: 'Inter', sans-serif;
+    /* Puedes cambiar a tu fuente preferida */
+}
+
+/* Ajustes para el navbar fijo */
+.navbar-fixed {
+    @apply fixed w-full z-10 shadow-lg;
+}
+
+/* Ajustes de enlaces para consistencia en todo el proyecto */
+a {
+    @apply text-blue-500 hover:text-blue-700 transition-colors;
+}
+
+a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.6);
+    /* Azul claro al hacer focus */
+}
+
+/* Ajustes adicionales específicos para componentes */
+button {
+    @apply transition-all duration-200 ease-in-out;
+}
+
+/* Ajustes para que las imágenes sean siempre responsivas */
+img {
+    @apply max-w-full h-auto;
 }
