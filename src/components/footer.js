@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className="bg-gray-800 text-gray-300 py-4">
             <div className="container mx-auto text-center">
-                &copy; {new Date().getFullYear()} Mi Nombre. Todos los derechos reservados.
+                &copy; {new Date().getFullYear()} Héctor Martil. Todos los derechos reservados.
             </div>
         </footer>
     );
