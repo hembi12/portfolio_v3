@@ -96,7 +96,7 @@ const Navbar = () => {
                 )}
             >
                 <div className="flex justify-between items-center p-4 border-b border-gray-700">
-                    <h2 className="text-white text-lg font-semibold">Navegación</h2>
+                    <h2 className="text-white text-lg font-semibold">Menu</h2>
                     <button onClick={toggleMenu} aria-label="Close menu" className="text-gray-300 hover:text-white">
                         <FiX className="w-6 h-6" />
                     </button>

@@ -10,7 +10,7 @@ const Resume = () => {
                 <div className="flex justify-center space-x-4">
                     {/* Botón para ver el resume */}
                     <a 
-                        href="/Hector-Martil-CV.pdf" 
+                        href="/Hector_Martil_CV.pdf" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="bg-blue-500 text-white px-8 py-4 text-lg font-semibold rounded"
@@ -19,7 +19,7 @@ const Resume = () => {
                     </a>
                     {/* Botón para descargar el resume */}
                     <a 
-                        href="/Hector-Martil-CV.pdf" 
+                        href="/Hector_Martil_CV.pdf" 
                         download 
                         className="border border-blue-500 text-blue-500 px-8 py-4 text-lg font-semibold rounded hover:bg-blue-500 hover:text-white transition-colors"
                     >
