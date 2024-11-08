@@ -1,5 +1,5 @@
-// src/components/navbar.js
-import React, { useState, useEffect } from 'react';
+// src/components/Navbar.js
+import React, { useState, useEffect, useMemo } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
 import classNames from 'classnames';
 
@@ -11,15 +11,15 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     };
 
-    // Lista de enlaces de navegación con ID para cada sección
-    const navLinks = [
+    // Lista de enlaces de navegación con ID para cada sección, usando useMemo para evitar recrearlo en cada render
+    const navLinks = useMemo(() => [
         { href: "#home", id: "home", label: "Home" },
         { href: "#about", id: "about", label: "About" },
         { href: "#skills", id: "skills", label: "Skills" },
         { href: "#projects", id: "projects", label: "Projects" },
         { href: "#resume", id: "resume", label: "Resume" },
         { href: "#contact", id: "contact", label: "Contact" },
-    ];
+    ], []);
 
     // Monitorear el desplazamiento para detectar la sección activa
     useEffect(() => {
@@ -50,7 +50,7 @@ const Navbar = () => {
     return (
         <nav className="bg-gray-900 fixed w-full z-20 top-0 shadow-lg">
             <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-                <div className="text-white text-2xl font-bold">Mi Portfolio</div>
+                <div className="text-white text-2xl font-bold">HM</div>
 
                 <button 
                     onClick={toggleMenu} 

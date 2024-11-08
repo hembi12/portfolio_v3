@@ -120,7 +120,7 @@ const Contact = () => {
                         ></textarea>
                         {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
                     </div>
-                    <button type="submit" className="bg-blue-500 text-white w-full md:w-auto px-6 py-2 rounded">
+                    <button type="submit" className="bg-blue-500 text-white w-full md:w-auto px-6 py-2 font-semibold  rounded">
                         Send
                     </button>
                 </form>

@@ -63,7 +63,13 @@ const Projects = () => {
     return (
         <section id="projects" className="py-20 bg-white px-4">
             <div className="container mx-auto">
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8">Projects</h2>
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-4">Projects</h2>
+                
+                {/* Descripción de proyectos */}
+                <p className="text-center text-gray-700 mb-8">
+                    The following projects were developed and published by me.
+                </p>
+
                 <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {/* Mostrar proyectos principales */}
                     {mainProjects.map((project, index) => (
@@ -79,11 +85,11 @@ const Projects = () => {
                             <div className="relative">
                                 <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover" />
                                 <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center space-x-4 opacity-0 hover:opacity-100 transition-opacity bg-black bg-opacity-50">
-                                    <a href={project.projectUrl} target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white px-4 py-2 rounded">
-                                        View Project
+                                    <a href={project.projectUrl} target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white px-4 py-2 font-semibold rounded">
+                                        View
                                     </a>
-                                    <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="border border-blue-500 text-blue-500 px-4 py-2 rounded hover:bg-blue-500 hover:text-white transition-colors">
-                                        View Repo
+                                    <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="border border-blue-500 text-blue-500 px-4 py-2 font-semibold  rounded hover:bg-blue-500 hover:text-white transition-colors">
+                                        Repo
                                     </a>
                                 </div>
                             </div>
@@ -119,11 +125,11 @@ const Projects = () => {
                             <div className="relative">
                                 <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover" />
                                 <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center space-x-4 opacity-0 hover:opacity-100 transition-opacity bg-black bg-opacity-50">
-                                    <a href={project.projectUrl} target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white px-4 py-2 rounded">
-                                        View Project
+                                    <a href={project.projectUrl} target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white px-4 py-2 font-semibold rounded">
+                                        View
                                     </a>
-                                    <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="border border-blue-500 text-blue-500 px-4 py-2 rounded hover:bg-blue-500 hover:text-white transition-colors">
-                                        View Repo
+                                    <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="border border-blue-500 text-blue-500 px-4 py-2 font-semibold rounded hover:bg-blue-500 hover:text-white transition-colors">
+                                        Repo
                                     </a>
                                 </div>
                             </div>
@@ -150,7 +156,7 @@ const Projects = () => {
                 <div className="text-center mt-8">
                     <button
                         onClick={() => setShowMore(!showMore)}
-                        className="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition-colors"
+                        className="bg-blue-500 text-white px-6 py-2 font-semibold rounded hover:bg-blue-600 transition-colors"
                     >
                         {showMore ? "View Less" : "View More"}
                     </button>
