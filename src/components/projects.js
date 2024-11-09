@@ -102,7 +102,7 @@ const Projects = () => {
                             <div className="relative">
                                 <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover" />
                                 <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center space-x-4 opacity-0 hover:opacity-100 transition-opacity bg-black bg-opacity-50">
-                                    <a href={project.projectUrl} target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white px-4 py-2 font-semibold rounded">
+                                    <a href={project.projectUrl} target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white px-4 py-2 font-semibold rounded hover:bg-blue-600 hover:text-white transition-colors">
                                         View
                                     </a>
                                     <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="border border-blue-500 text-blue-500 px-4 py-2 font-semibold rounded hover:bg-blue-500 hover:text-white transition-colors">
@@ -141,7 +141,7 @@ const Projects = () => {
                             <div className="relative">
                                 <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover" />
                                 <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center space-x-4 opacity-0 hover:opacity-100 transition-opacity bg-black bg-opacity-50">
-                                    <a href={project.projectUrl} target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white px-4 py-2 font-semibold rounded">
+                                    <a href={project.projectUrl} target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white px-4 py-2 font-semibold rounded hover:bg-blue-600 hover:text-white transition-colors">
                                         View
                                     </a>
                                     <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="border border-blue-500 text-blue-500 px-4 py-2 font-semibold rounded hover:bg-blue-500 hover:text-white transition-colors">
